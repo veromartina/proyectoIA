@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,900;1,500;1,800&family=Patua+One&display=swap');
+@import url(./normalize.css);
+
+/* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* quitar lineas de los enlaces*/
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Patua One', serif;
+  
+}
+
+body{
+    background-color: #FEC35F;
+}
+
+.hero {
+    width: 100vw;
+    height: 800px;
+    background-image: radial-gradient(circle at bottom center, rgba(254, 196, 95, 0.466),rgba(233, 120, 44, 0.449),rgba(244, 157, 70, 0.455)), url(./imagenes/uno.jpg);
+    background-position:center;
+    background-size: cover;
+    box-shadow: 0px 0px 22px 22px coral;
+
+
+}
+
+.title{
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1{
+    color: antiquewhite;
+
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.title p{
+    text-align: justify;
+    padding: 15px;
+    font-family: 'Patua One', serif;
+    font-weight: 900;
+    color: #522a0c;
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 50px;
+    max-width: 1700px;
+    min-width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* para centrar*/
+
+}
+
+.nav-bar ul {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    color: #ba7805;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+ li a{ 
+    padding: 10px 65px;
+    display: block;
+    color: #c26721;
+    font-family: 'Patua One', serif;
+    font-size: 15px;
+    cursor: pointer;
+   
+
+ }
+
+ .title {
+    display: flex; 
+    justify-content: center;
+    max-width: 1200px;
+    min-width: 300px;
+    padding-bottom: 5px;
+    
+
+ }
+
+ .characteristics{
+    display: flex; 
+    padding: 15px 20px ;
+    overflow: hidden;
+
+ }
+ .characteristics li{
+    list-style:decimal;
+
+ }
+ 
+.gallery {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    /* para centrar*/
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+#galleryContainer {
+    display: flex;
+    /*para que sea flexible*/
+    gap: 20px;
+    /*para que se separen*/
+    flex-wrap: wrap;
+    /*para cuando sea mas grande del tamaño que le paso , no se acumule sino que pase para abajo*/
+}
+
+.galleryTitle {
+    font-size: 1rem;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+
+}
+
+h2 {
+ 
+    color:  #7d5103;
+    
+}
+
+.gallerypicture {
+    min-width: 200px;
+    /*logro responsive, no hace falta tener medias queries,se adapta a cualquier tipo de pantalla*/
+
+    /*flex-basis: 300px;  ambos van juntos 
+    flex-grow: 1;   lo puedo acortar con el shorthand*/
+    flex: 300px;
+    /*me toma las dos propiedades anteriores*/
+    /*estamos utilizando el shorthand de flexbox. Esta forma abreviada toma los valores para flex-grow, flex-shrink y flex-basis en ese orden. En este caso, al definir "flex: 350px;", estaríamos estableciendo el valor para flex-basis en 350px y los valores predeterminados para flex-grow y flex-shrink. Es una forma conveniente de definir múltiples propiedades en una sola línea  */
+    border: 5px solid blanchedalmond;
+}
+
+.galleryImg {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    /*se utiliza para indicar cómo el contenido de un elemento reemplazado, como una imagen o un video, debería redimensionarse para ajustarse al contenedor. En este caso, "cover" significa que el contenido se ampliará o reducirá para cubrir completamente el contenedor, pudiendo recortar partes del contenido si es necesario para lograr el ajuste. Es útil para asegurarse de que el contenido se ajuste de manera adecuada y se vea bien dentro de su contenedor.  */
+}
+
+#biblical{
+    max-width:1200px;
+    min-width: 300px;
+    display: flex;
+    margin-top: 3%;
+    padding-top: 3%;
+    box-shadow: 5px 5px 5px 5px coral;
+    border: 3px solid #7d5103 ;
+
+}
+.img-biblical{
+   width: auto;
+
+}
+
+.title2, p {
+    font-size: small;
+    text-align:center;
+    min-width: 300px;
+}
+
+footer {
+    display: flex;
+    height: 60px;
+    background-color: antiquewhite;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+h5 {
+
+    padding-top: 10px;
+    padding-left: 70px;
+    font-family: 'Patua One', serif;
+    font-size: 10px;
+
+}
+.pie {
+    left: 60%;
+    bottom: 25px;
+    cursor: pointer;
+
+}
